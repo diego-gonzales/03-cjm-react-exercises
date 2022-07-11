@@ -47,7 +47,11 @@ const CrudApp = () => {
   };
 
   const deleteData = (id) => {
-    const newData = data.filter(element => element.id !== id);
+    const areYouSure = window.confirm("Are you sure to delete the record?");
+
+    if (!areYouSure) return;
+
+    const newData = data.filter((element) => element.id !== id);
 
     setData(newData);
   };
@@ -55,17 +59,19 @@ const CrudApp = () => {
   return (
     <>
       <h1>CRUD App</h1>
-      <CrudForm
-        createData={createData}
-        updateData={updateData}
-        dataToEdit={dataToEdit}
-        setDataToEdit={setDataToEdit}
-      />
-      <CrudTable
-        myData={data}
-        setDataToEdit={setDataToEdit}
-        deleteData={deleteData}
-      />
+      <section className="grid-1-2">
+        <CrudForm
+          createData={createData}
+          updateData={updateData}
+          dataToEdit={dataToEdit}
+          setDataToEdit={setDataToEdit}
+        />
+        <CrudTable
+          myData={data}
+          setDataToEdit={setDataToEdit}
+          deleteData={deleteData}
+        />
+      </section>
     </>
   );
 };

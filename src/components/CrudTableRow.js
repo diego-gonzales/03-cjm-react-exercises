@@ -5,13 +5,13 @@ const CrudTableRow = ({ element, setDataToEdit, deleteData }) => {
 
   return (
     <tr>
-      <td>{element.name}</td>
-      <td>{element.type}</td>
+      <td>{name}</td>
+      <td>{type}</td>
       <td>
         <button type="button" onClick={() => setDataToEdit(element)}>
           Edit
         </button>
-        <button type="button" onClick={() => deleteData(element.id)}>
+        <button type="button" onClick={() => deleteData(id)}>
           Delete
         </button>
       </td>
