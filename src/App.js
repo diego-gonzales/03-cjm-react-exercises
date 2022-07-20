@@ -2,13 +2,15 @@
 import React from 'react';
 import CrudAPI from './components/CrudAPI';
 import CrudApp from "./components/CrudApp";
+import SongSearch from './components/SongSearch';
 
 function App() {
   return (
     <div>
       <h2>React Exercises</h2>
       {/* <CrudApp /> */}
-      <CrudAPI />
+      {/* <CrudAPI /> */}
+      <SongSearch />
     </div>
   );
 }
