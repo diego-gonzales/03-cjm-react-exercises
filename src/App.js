@@ -2,6 +2,7 @@
 import React from 'react';
 import CrudAPI from './components/CrudAPI';
 import CrudApp from "./components/CrudApp";
+import NestedSelects from './components/NestedSelects';
 import SongSearch from './components/SongSearch';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <h2>React Exercises</h2>
       {/* <CrudApp /> */}
       {/* <CrudAPI /> */}
-      <SongSearch />
+      {/* <SongSearch /> */}
+      <NestedSelects />
     </div>
   );
 }
