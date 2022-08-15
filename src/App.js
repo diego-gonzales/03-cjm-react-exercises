@@ -1,5 +1,6 @@
 // From React v17 isn´t necessary import 'React', but for compatibility with before versions, we import it
 import React from 'react';
+import ContactForm from './components/ContactForm';
 import CrudAPI from './components/CrudAPI';
 import CrudApp from "./components/CrudApp";
 import NestedSelects from './components/NestedSelects';
@@ -12,7 +13,8 @@ function App() {
       {/* <CrudApp /> */}
       {/* <CrudAPI /> */}
       {/* <SongSearch /> */}
-      <NestedSelects />
+      {/* <NestedSelects /> */}
+      <ContactForm />
     </div>
   );
 }
