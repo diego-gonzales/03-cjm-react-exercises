@@ -3,6 +3,7 @@ import React from 'react';
 import ContactForm from './components/ContactForm';
 import CrudAPI from './components/CrudAPI';
 import CrudApp from "./components/CrudApp";
+import { Modals } from './components/Modals';
 import NestedSelects from './components/NestedSelects';
 import SongSearch from './components/SongSearch';
 
@@ -14,7 +15,8 @@ function App() {
       {/* <CrudAPI /> */}
       {/* <SongSearch /> */}
       {/* <NestedSelects /> */}
-      <ContactForm />
+      {/* <ContactForm /> */}
+      <Modals />
     </div>
   );
 }
